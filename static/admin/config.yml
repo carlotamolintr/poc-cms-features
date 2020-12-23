@@ -79,7 +79,7 @@ collections:
           summary: '{{fields.image}}',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
-        - name: 'POC Carlota'
+  - name: 'POC Carlota'
     label: 'POC Carlota'
     # identifier_field: name
     folder: 'assets/content/blog'
