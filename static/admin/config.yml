@@ -80,7 +80,7 @@ collections:
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
    - name: 'story_projects'
-      identifier_field: name
+      # identifier_field: name
      label: 'Story Projects'
      label_singular: 'Story Project'
      folder: 'assets/content/stories'
@@ -88,7 +88,7 @@ collections:
      format: 'json'
      slug: '{{slug}}'
      preview_path: 'stories/{{slug}}'
-      filter: { field: 'project_type', value: 'story' }
+     filter: { field: 'project_type', value: 'story' }
      fields:
         - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['story', 'photo'] }
        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
