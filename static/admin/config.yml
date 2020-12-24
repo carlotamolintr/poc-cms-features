@@ -56,7 +56,7 @@ collections:
     folder: 'assets/content/projects'
     create: true
     format: 'json'
-    slug: '{{project_type}}-{{slug}}'
+   # slug: '{{project_type}}-{{slug}}'
     preview_path: 'projects/{{slug}}'
     fields:
       - {
@@ -80,7 +80,21 @@ collections:
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
         
-   
+ - name: 'blog'
+  label: 'Blog'
+  # identifier_field: name
+  folder: 'assets/content/blog'
+  create: true
+  format: 'json'
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  # editor:
+  #   preview: true
+  fields:
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+    - { label: 'Description', name: 'description', widget: 'string' }
+    - { label: 'Body', name: 'body', widget: 'markdown' }
+    }
   # - name: 'photo_projects'
   #   # identifier_field: name
   #   label: 'Photo Projects'
