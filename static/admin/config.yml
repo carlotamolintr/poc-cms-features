@@ -56,7 +56,7 @@ collections:
     folder: 'assets/content/projects'
     create: true
     format: 'json'
-   # slug: '{{project_type}}-{{slug}}'
+    slug: '{{project_type}}-{{slug}}'
     preview_path: 'projects/{{slug}}'
     fields:
       - {
